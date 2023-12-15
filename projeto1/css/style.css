@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #081420;
+}
+
+.bgdetails{
+    
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(/img/bg_details.svg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    position: relative;
+}
+
+nav{
+    margin-top: 20px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 200px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.freetrial{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: white;
+    background-image: linear-gradient(45deg, #002454, #C1FF72);
+    font-size: 15px;
+    border-radius: 30px;
+    
+}
+
+.content{
+    margin-top: 15%;
+    max-width: 600px;
+}
+
+.content h1{
+    font-size: 80px;
+    color: white;
+}
+
+.content p{
+    margin: 10px 0 30px;
+    color: white;
+}
+
+.content .freetrial{
+    padding: 15px 80px;
+    font-size: 20px;
+}
+
+.freetrial:hover{
+    background-image: none;
+    border: 1px solid #C1FF72;
+    color:#C1FF72
+}
+
+.freetrial2{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    border: 1px solid #C1FF72;
+    color:#C1FF72;
+    font-size: 20px;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.imgbanner{
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    filter: drop-shadow(20px 10px 4px black);
+    
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutimg2{
+    width: 50vw;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.gallery{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+}
+
+.gallery img{
+    width: 100%;
+    padding: 10px;
+    
+}
+
+.bgdetails2{
+    
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(/img/bg_details2.svg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    position: relative;
+}
+
+
+
+#galeria h2{
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    margin-top: 80px;
+
+}
+
+#galeria p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+#galeria h1{
+    margin-top: -20px;
+    font-size: 80px;
+    color:#C1FF72;
+    text-align: center;
+    align-items: center;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 100%;
+    max-width: 700px;
+}
+
+.grupo-input{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid white;
+    color: #C1FF72;
+    background: transparent;
+    font-size: 15px;
+
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: white;
+}
+
+.contact-btn{
+    padding: 10px 0;
+    color: white;
+    background-image: linear-gradient(45deg, #002454, #C1FF72);
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+.title h2{
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    margin-top: 80px;
+    
+    
+}
+
+.title h1{
+    margin-top: -20px;
+    font-size: 80px;
+    color:#C1FF72;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
