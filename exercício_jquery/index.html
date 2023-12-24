@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Ebac_jQuery</title>
+</head>
+
+<body>
+
+    <!-- 
+    1) Criar uma aplicação de lista de tarefas contendo um formulário com um campo para adicionar o nome da tarefa e um botão para cadastrar a tarefa.
+    2) Ao submeter o formulário, adicione um elemento <li> dentro de
+   uma lista ordenada ou não.
+    3) Ao clicar nos itens da lista, adicione um efeito que aplique uma linha em cima do texto (text-decoration: line-through).
+   -->
+
+    <div class="container">
+        <h2>Lista de Tarefas</h2>
+        <form id="taskform">
+            <input id="taskinput" type="text" placeholder="Nome da Tarefa"></input>
+            <button id="taskbtn" type="submit">Cadastrar</button>
+    </div>
+
+    <div class="list" id="tasklist">
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
