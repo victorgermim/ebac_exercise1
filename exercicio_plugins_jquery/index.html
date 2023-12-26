@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>exercicio_plugins_jquery</title>
+</head>
+<body>
+    <h2>Exercício <br>plugins jquery</h2>
+    <form id="form_jquery" class="form">
+        <input id="name" class="input" type="text" placeholder="Nome Completo">
+        <input id="email" class="input" type="email" placeholder="Email">
+        <input id="telefone" class="input" type="text" placeholder="Telefone">
+        <input id="cpf" class="input" type="text" placeholder="CPF">
+        <input class="input" type="text" placeholder="Endereço Completo">
+        <input id="cep" class="input" type="text" placeholder="CEP">
+        <textarea id="message" class="textarea" placeholder="Observação"></textarea>
+        <input id="submit" type="submit" placeholder="Enviar">
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/script/jquery.mask.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#telefone').mask('+00 (00) 00000-0000');
+            $('#cpf').mask('000.000.000-00');
+            $('#cep').mask('00000-000');
+        });
+    </script>
+</body>
+</html>
