@@ -2,8 +2,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin').default;
-
+const imagemin = require('gulp-imagemin');
 
 // Função para comprimir imagens
 function comprimeImagens() {
@@ -23,14 +22,14 @@ function comprimeJavaScript() {
 // Função para compilar SASS
 function compilaSass() {
     return gulp.src('./source/styles/main.scss')
-        .pipe(sourcemaps.init())
+    .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle: 'compressed'
-        }).on('error', sass.logError)) 
+        }))
         .pipe(sourcemaps.write('./maps'))
-        .pipe(gulp.dest('./build/styles/'));
-}
+        .pipe(gulp.dest('./build/styles'));
 
+}
 // Tarefa padrão
 exports.default = function () {
     gulp.watch('./source/styles/**/*.scss', { ignoreInitial: false }, gulp.series(compilaSass));
